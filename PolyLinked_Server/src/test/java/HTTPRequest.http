@@ -1,0 +1,142 @@
+GET http://localhost:8080/search/users/al HTTP/1.1
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyNDEzMDJiMWQtNGUyYy1hZjg5IiwiaWF0IjoxNzE3NTY1Nzc1LCJleHAiOjE3MTgxNjU3NzV9.NsNbWPHcsx1YA4FUxu6-cY18CWuIqOzRAKWswzrk9uA
+
+###
+
+# @name skill
+
+GET http://localhost:8080/users/skills/edu32706abb-4abf-ae52 HTTP/1.1
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyNDEzMDJiMWQtNGUyYy1hZjg5IiwiaWF0IjoxNzE3NTMzMTkzLCJleHAiOjE3MTgxMzMxOTN9.5YGnn3xuQjVUOgHOKOicOw7v4vip65m8JSGn2sNYICY
+
+###
+
+# @name education
+
+GET http://localhost:8080/users/educations/user57259634-4143-8237 HTTP/1.1
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyNTcyNTk2MzQtNDE0My04MjM3IiwiaWF0IjoxNzE3NTI3MzI5LCJleHAiOjE3MTgxMjczMjl9.KbEUOS-k0OfyK6oLlx4onHwLk6PNnZNfo97cE4iE5fE
+
+###
+
+# @name posts
+
+GET http://localhost:8080/users/posts/post23033026-439f-80b3 HTTP/1.1
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyODc1MzgzMDMtNGFlZC05MGI4IiwiaWF0IjoxNzE3NTE2OTEyLCJleHAiOjE3MTgxMTY5MTJ9.t-hDKUlCkWx0a-PRq0uPUpWXdqFBf3EAB_bQjL0qeKU
+
+###
+
+# @name feed
+
+GET http://localhost:8080/newsfeed HTTP/1.1
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyOTkxMDQ4MGQtNGI5YS1hZGE4IiwiaWF0IjoxNzE5NjkzNjEzLCJleHAiOjE3MjAyOTM2MTN9.7owSW3xfMvvpa3xxWYvgiV-d5tmoix9x4PdWoe9DxPA
+
+###
+
+# @name hashtag
+
+GET http://localhost:8080/search/hashtags/wow HTTP/1.1
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyNDEzMDJiMWQtNGUyYy1hZjg5IiwiaWF0IjoxNzE3NTY1Nzc1LCJleHAiOjE3MTgxNjU3NzV9.NsNbWPHcsx1YA4FUxu6-cY18CWuIqOzRAKWswzrk9uA
+
+###
+
+# @name PostLike
+
+POST http://localhost:8080/likes HTTP/1.1
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyMTgwMDQ3NmYtNDVhZS04NzMyIiwiaWF0IjoxNzE3MjcwNTc5LCJleHAiOjE3MTc4NzA1Nzl9.sx6P0kKps9Y4pdO4-NS4oFBtFN1zOQqy29RqBV0p5zI
+
+# body
+{
+  "postId": "post34030bd0-42ba-88c8",
+  "userId": "user1800476f-45ae-8732",
+  "date": 8187
+}
+
+###
+
+# @name DeleteLike
+
+DELETE http://localhost:8080/likes/post34030bd0-42ba-88c8&user1800476f-45ae-8732 HTTP/1.1
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyMTgwMDQ3NmYtNDVhZS04NzMyIiwiaWF0IjoxNzE3MjcwNTc5LCJleHAiOjE3MTc4NzA1Nzl9.sx6P0kKps9Y4pdO4-NS4oFBtFN1zOQqy29RqBV0p5zI
+
+###
+
+# @name Postfollow
+
+POST http://localhost:8080/follows HTTP/1.1
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyODcyNjc4NTgtNDlmNy04NjQ4IiwiaWF0IjoxNzE3MzIyMjMzLCJleHAiOjE3MTc5MjIyMzN9.yRSfpcTmkzlPoFWZPZJKdNbq_OfwAOL4JaYarCgpzac
+
+# body
+{
+  "follower": "user87267858-49f7-8648",
+  "followed": "user71323753-4103-9147"
+}
+
+###
+
+
+# @name deleteUser
+
+DELETE http://localhost:8080/users HTTP/1.1
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyNzE4MTc0MjYtNGY4MS04MTY3IiwiaWF0IjoxNzE3MDA3NjIwLCJleHAiOjE3MTc2MDc2MjB9.Rg97FRpOMErx-VwZ-ysS92uNLqRwzApgKpIgPJ5OKrE
+
+
+
+###
+
+# @name addConnectTest
+
+POST http://localhost:8080/connections HTTP/1.1
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyNzA2ODczNTgtNGYxNi04Nzg1IiwiaWF0IjoxNzE3MDc2Mzg0LCJleHAiOjE3MTc2NzYzODR9.w9tdJNeq_xnzVdW6rv4Kqeidqi7GwrgGRg1VYPJu-aw
+
+# body
+{
+  "applicant_id": "user70687358-4f16-8785",
+  "acceptor_id": "user37675cbe-4121-a9f6",
+  "note": "salam bar note",
+  "accept_state": "WAITING"
+}
+
+
+
+###
+
+
+
+# @name updateConnectTest
+
+PUT http://localhost:8080/connections HTTP/1.1
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyMzc2NzVjYmUtNDEyMS1hOWY2IiwiaWF0IjoxNzE3MDc4MTE4LCJleHAiOjE3MTc2NzgxMTh9.LXbdFjvdDCcVrnV3WEXg3S0r7vLwpVJrOPFWUgtegwE
+
+# body
+
+{
+  "applicant_id": "user70687358-4f16-8785",
+  "acceptor_id": "user37675cbe-4121-a9f6",
+  "note": "salam bar note",
+  "accept_state": "ACCEPTED"
+}
+
+
+
+###
+
+
+# @name deleteConnectTest
+
+DELETE http://localhost:8080/connections HTTP/1.1
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyNzA2ODczNTgtNGYxNi04Nzg1IiwiaWF0IjoxNzE3MDc2Mzg0LCJleHAiOjE3MTc2NzYzODR9.w9tdJNeq_xnzVdW6rv4Kqeidqi7GwrgGRg1VYPJu-aw
+
+# body
+{
+  "applicant_id": "user70687358-4f16-8785",
+  "acceptor_id": "user37675cbe-4121-a9f6",
+  "note": "salam bar note",
+  "accept_state": "ACCEPTED"
+}
+
+###

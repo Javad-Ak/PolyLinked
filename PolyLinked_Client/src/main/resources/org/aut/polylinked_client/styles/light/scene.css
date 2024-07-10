@@ -1,0 +1,5 @@
+.notification-bar > .pane, .notification-bar > .pane .title, .notification-bar > .pane .label {
+    -fx-background-color: #e5e5e5;
+    -fx-text-fill: black;
+    -fx-font-size: 0.9em;
+}

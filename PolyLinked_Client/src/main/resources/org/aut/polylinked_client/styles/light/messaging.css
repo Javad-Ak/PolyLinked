@@ -1,0 +1,88 @@
+.root {
+    -fx-background-color: white;
+    -fx-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    -fx-text-fill: Black;
+    -fx-font-size: 1em;
+}
+
+.label {
+    -fx-font-size: 0.9em;
+    -fx-text-fill: black;
+}
+
+.hyperlink {
+    -fx-font-size: 0.85em;
+    -fx-text-fill: black;
+    -fx-underline: false;
+    -fx-border-color: transparent;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+.hyperlink:hover {
+    -fx-text-fill: darkblue;
+}
+
+.hyperlink:pressed {
+    -fx-text-fill: darkblue;
+    -fx-border-color: transparent;
+    -fx-focus-color: transparent;
+}
+
+.button {
+    -fx-background-color: transparent;
+    -fx-text-fill: black;
+    -fx-font-size: 1em;
+    -fx-background-radius: 4;
+}
+
+.button:hover, .button:hover #actionIcon {
+    -fx-fill: #084B8A;
+    -fx-text-fill: #084B8A;
+}
+
+.separator{
+    -fx-background-color: #0A74DA;
+}
+
+.jfx-text-area {
+    -jfx-focus-color: black;
+    -jfx-unfocus-color: #BDBDBD;
+    -fx-prompt-text-fill: #BDBDBD;
+    -fx-background-color: #f3f3f3;
+    -fx-text-fill: black;
+    -fx-font-size: 1em;
+}
+
+.list-view, .list-cell {
+    -fx-background-color: transparent;
+}
+
+.list-cell:selected {
+    -fx-background-color: rgb(50, 50, 50, 0.1);
+}
+
+.scroll-bar {
+    -fx-background-color:transparent;
+}
+
+.thumb {
+    -fx-background-color: #b3b3b3;
+    -fx-border-insets: 10;
+}
+
+.text-field{
+    -jfx-focus-color: black;
+    -jfx-unfocus-color: #BDBDBD;
+    -fx-prompt-text-fill: #BDBDBD;
+    -fx-background-color: #f3f3f3;
+    -fx-text-fill: black;
+    -fx-font-size: 1em;
+    -fx-border-color: #0A74DA;
+    -fx-border-radius: 10;
+}
+
+#actionIcon {
+    -fx-font-size: 1.5em;
+    -fx-fill: #0A74DA;
+}

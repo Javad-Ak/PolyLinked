@@ -1,0 +1,68 @@
+.root {
+    -fx-background-color: white;
+    -fx-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    -fx-text-fill: Black;
+    -fx-font-size: 1em;
+}
+
+.header-label {
+    -fx-text-fill: #0A74DA;
+    -fx-font-size: 1.5em; /* Relative font size */
+    -fx-font-weight: bold;
+}
+
+.label {
+    -fx-font-size: 1em; /* Relative font size */
+    -fx-font-weight: bold;
+}
+
+.jfx-text-field {
+    -jfx-focus-color: #0A74DA; /* Blue focus color */
+    -jfx-unfocus-color: #BDBDBD; /* Light grey for unfocused state */
+    -fx-prompt-text-fill: #757575; /* Grey prompt text */
+    -fx-text-fill: black; /* Blue text color */
+    -fx-background-color: white;
+    -fx-font-size: 1em; /* Relative font size */
+}
+
+.jfx-password-field {
+    -jfx-focus-color: #0A74DA; /* Blue focus color */
+    -jfx-unfocus-color: #BDBDBD; /* Light grey for unfocused state */
+    -fx-prompt-text-fill: #757575; /* Grey prompt text */
+    -fx-text-fill: black; /* Blue text color */
+    -fx-background-color: white;
+    -fx-font-size: 1em; /* Relative font size */
+}
+
+.hyperlink {
+    -fx-text-fill: #0A74DA; /* Primary blue color */
+    -fx-font-size: 1em; /* Relative font size */
+}
+
+.hyperlink:hover {
+    -fx-text-fill: #084B8A; /* Darker blue on hover */
+}
+
+.button {
+    -fx-background-color: #0A74DA; /* Primary blue color */
+    -fx-text-fill: white;
+    -fx-font-size: 1.2em; /* Relative font size */
+    -fx-font-weight: bold;
+    -fx-background-radius: 4;
+}
+
+.toggle-button{
+    -fx-text-fill: black;
+}
+
+.button:hover {
+    -fx-background-color: #084B8A;
+}
+
+#sideBox {
+    -fx-background-color: #ccffff;
+}
+
+#messageText{
+    -fx-text-fill: #800000;
+}

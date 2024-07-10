@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.gleidson28.GNAvatarView?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<ScrollPane fx:id="root" stylesheets="@../styles/light/profile.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.aut.polylinked_client.control.ProfileController">
+   <content>
+      <BorderPane fx:id="borderPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+         <top>
+            <AnchorPane styleClass="header-image-container" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fx:id="background" fitHeight="150.0" fitWidth="800.0" nodeOrientation="INHERIT" pickOnBounds="true">
+                     <image>
+                        <Image url="@../images/background.jpeg" />
+                     </image>
+                     <viewport>
+                        <Rectangle2D />
+                     </viewport>
+                  </ImageView>
+                  <GNAvatarView fx:id="avatar" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="100.0" strokeWidth="4.0" styleClass="gn-avatar-view" type="CIRCLE" AnchorPane.bottomAnchor="-50.0" AnchorPane.leftAnchor="20.0">
+                     <image>
+                        <Image url="@../images/avatar.png" />
+                     </image>
+                  </GNAvatarView>
+                  <Button fx:id="backButton" layoutX="52.0" layoutY="14.0" mnemonicParsing="false" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
+                     <graphic>
+                        <FontIcon id="icon" iconLiteral="mdi-arrow-left" />
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </top>
+         <center>
+            <VBox spacing="10.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="nameLabel" text="Full name">
+                     <styleClass>
+                        <String fx:value="full-name-label" />
+                        <String fx:value="primary-color" />
+                     </styleClass>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Text id="info" fx:id="bioLabel" strokeType="OUTSIDE" strokeWidth="0.0" />
+                  <HBox spacing="10.0">
+                     <children>
+                        <Label fx:id="locationLabel" text="Location not set">
+                           <graphic>
+                              <FontIcon id="icon" iconLiteral="mdi-map-marker" iconSize="15" text="" />
+                           </graphic>
+                        </Label>
+                        <Label fx:id="joinedDateLabel" text="Joined">
+                           <graphic>
+                              <FontIcon id="icon" iconLiteral="mdi2c-calendar-account" iconSize="15" />
+                           </graphic>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox spacing="5.0">
+                     <children>
+                        <Hyperlink fx:id="followersLink" text="23 followers" />
+                        <Hyperlink fx:id="followingsLink" text="22 followings" />
+                        <Hyperlink fx:id="connectionsLink" text="22 connections" />
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="20.0" right="20.0" top="60.0" />
+               </padding>
+            </VBox>
+         </center>
+         <right>
+            <HBox fx:id="buttonBox" spacing="10.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="bannerButton" mnemonicParsing="false">
+                     <graphic>
+                        <FontIcon iconColor="WHITE" iconLiteral="mdi-image" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="avatarButton" mnemonicParsing="false">
+                     <graphic>
+                        <FontIcon iconColor="WHITE" iconLiteral="mdi-account" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="editButton" mnemonicParsing="false" text="Edit Profile" />
+                  <Button fx:id="connectButton" mnemonicParsing="false" text="Connect" />
+                  <Button fx:id="followButton" mnemonicParsing="false" text="Follow" />
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="20.0" top="10.0" />
+               </padding>
+            </HBox>
+         </right>
+         <bottom>
+            <TabPane prefHeight="450.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+              <tabs>
+                <Tab text="Education">
+                     <content>
+                        <VBox>
+                           <children>
+                              <Text id="info" fx:id="educationText" strokeType="OUTSIDE" strokeWidth="0.0" />
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </VBox>
+                     </content>
+                  </Tab>
+                <Tab text="Call Info">
+                     <content>
+                        <VBox>
+                           <children>
+                              <Text id="info" fx:id="callInfoText" strokeType="OUTSIDE" strokeWidth="0.0" />
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </VBox>
+                     </content>
+                  </Tab>
+                  <Tab text="Posts">
+                     <content>
+                        <VBox fx:id="postBox" alignment="TOP_CENTER" />
+                     </content>
+                  </Tab>
+              </tabs>
+            </TabPane>
+         </bottom>
+      </BorderPane>
+   </content>
+</ScrollPane>

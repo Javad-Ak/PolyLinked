@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefHeight="600.0" prefWidth="800.0" stylesheets="@../styles/light/login.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.aut.polylinked_client.control.SignupController">
+   <left>
+      <VBox id="sideBox" alignment="CENTER" BorderPane.alignment="CENTER">
+         <children>
+            <Label minHeight="-Infinity" minWidth="-Infinity" text="Welcome to PolyLinked!" />
+            <JFXToggleButton fx:id="themeToggle" minHeight="-Infinity" minWidth="-Infinity" text="theme" toggleColor="#949393" toggleLineColor="BLACK" unToggleLineColor="#e7e7e7" />
+            <ImageView fitHeight="300.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/signup.png" />
+               </image>
+            </ImageView>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+         </padding>
+      </VBox>
+   </left>
+   <center>
+      <VBox alignment="CENTER" maxWidth="500.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="TOP_LEFT" text="Join PolyLinked now and establish a professional network." wrapText="true">
+               <graphic>
+                  <ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/app-icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <VBox alignment="CENTER_LEFT" spacing="12.0">
+               <children>
+                  <JFXTextField fx:id="firstNameTF" promptText="First Name" />
+                  <JFXTextField fx:id="lastNameTF" promptText="Last Name" />
+                  <JFXTextField fx:id="additionalNameTF" promptText="Additional Name (optional)" />
+                  <JFXTextField fx:id="emailTF" promptText="Email">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXPasswordField fx:id="passwordTF" promptText="Password" />
+                  <JFXPasswordField fx:id="confirmPasswordTF" promptText="Confirm Password" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="25.0" top="25.0" />
+               </VBox.margin>
+            </VBox>
+            <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#signupPressed" text="Signup">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+            <HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="-Infinity">
+               <children>
+                  <Label text="Already have an account?" />
+                  <Hyperlink minHeight="-Infinity" minWidth="-Infinity" onAction="#loginPressed" text="Login" />
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+         </padding>
+      </VBox>
+   </center>
+</BorderPane>

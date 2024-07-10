@@ -1,0 +1,51 @@
+.root {
+    -fx-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    -fx-background-color: #ffffff;
+    -fx-font-size: 1em;
+}
+
+#pane {
+    -fx-border-width: 0 0 0 3px;
+    -fx-border-color: #b2b2b2;
+}
+
+.toggle-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-font-size: 0.9em;
+}
+
+.toggle-button:selected, .toggle-button:selected #icon {
+    -fx-background-color: transparent;
+    -fx-fill: #084B81;
+    -fx-text-fill: #084B81;
+    -fx-border-color: transparent transparent #084B81 transparent;
+    -fx-border-width: 0 0 3px 0;
+    -fx-border-radius: 0;
+}
+
+.toggle-button:hover {
+    -fx-background-color: #c8d5f7;
+}
+
+.menu-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+
+.menu-button:hover {
+    -fx-background-color: #c8d5f7;
+}
+
+.context-menu {
+    -fx-background-color: white;
+}
+
+#icon {
+    -fx-font-size: 1.5em;
+    -fx-fill: black;
+}
+
+#gridPane {
+    -fx-background-color: #d2ddfa;
+}

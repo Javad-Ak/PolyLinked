@@ -1,0 +1,95 @@
+.root {
+    -fx-background-color: #202020;
+    -fx-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    -fx-text-fill: white;
+    -fx-font-size: 1em;
+}
+
+#pane {
+    -fx-border-width: 0 0 0 3px;
+    -fx-border-color: #858585;
+}
+
+.label {
+    -fx-font-size: 0.9em;
+    -fx-text-fill: white;
+}
+
+.hyperlink {
+    -fx-font-size: 0.85em;
+    -fx-text-fill: white;
+    -fx-underline: false;
+    -fx-border-color: transparent;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+.hyperlink:hover {
+    -fx-text-fill: #0A74DA;
+}
+
+.hyperlink:pressed {
+    -fx-text-fill: #0A74DA;
+    -fx-border-color: transparent;
+    -fx-focus-color: transparent;
+}
+
+.button {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-size: 1em;
+    -fx-background-radius: 4;
+}
+
+.button:hover, .button:hover #actionIcon {
+    -fx-fill: #084B8A;
+    -fx-text-fill: #084B8A;
+}
+
+.separator {
+    -fx-background-color: #0A74DA;
+}
+
+.jfx-text-area {
+    -jfx-focus-color: white;
+    -jfx-unfocus-color: #BDBDBD;
+    -fx-prompt-text-fill: #BDBDBD;
+    -fx-background-color: #252525;
+    -fx-text-fill: white;
+    -fx-font-size: 1em;
+}
+
+.list-view, .list-cell {
+    -fx-background-color: transparent;
+}
+
+.list-cell:selected {
+    -fx-background-color: rgb(50, 50, 50, 0.5);
+}
+
+.scroll-bar {
+    -fx-background-color: transparent;
+}
+
+.thumb {
+    -fx-background-color: #b3b3b3;
+    -fx-border-insets: 10;
+}
+
+.text-field {
+    -jfx-focus-color: white;
+    -jfx-unfocus-color: #BDBDBD;
+    -fx-prompt-text-fill: #BDBDBD;
+    -fx-background-color: #252525;
+    -fx-text-fill: white;
+    -fx-font-size: 1em;
+    -fx-border-color: #0A74DA;
+    -fx-border-radius: 10;
+}
+
+#actionIcon {
+    -fx-font-size: 1.5em;
+    -fx-fill: #0A74DA;
+}
+
+

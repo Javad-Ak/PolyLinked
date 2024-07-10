@@ -1,0 +1,116 @@
+.root {
+    -fx-background-color: white;
+    -fx-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    -fx-text-fill: Black;
+    -fx-font-size: 1em;
+}
+
+.root * {
+    -fx-background-color: transparent;
+}
+
+.header-label {
+    -fx-text-fill: #0A74DA; /* Blue text color */
+    -fx-font-size: 2em; /* Increased font size for profile header */
+    -fx-font-weight: bold;
+}
+
+#icon {
+    -fx-font-size: 1.5em;
+    -fx-fill: #0A74DA;
+}
+
+.label {
+    -fx-font-size: 1em; /* Relative font size */
+    -fx-font-weight: bold;
+    -fx-text-fill: #0A74DA; /* Blue text color */
+}
+
+.hyperlink:hover {
+    -fx-text-fill: darkblue;
+}
+
+.hyperlink:pressed {
+    -fx-text-fill: darkblue;
+    -fx-border-color: transparent;
+    -fx-focus-color: transparent;
+}
+
+.button {
+    -fx-background-color: #0A74DA; /* Primary blue color */
+    -fx-text-fill: white;
+    -fx-font-size: 1em; /* Relative font size */
+    -fx-font-weight: bold;
+    -fx-background-radius: 4;
+}
+
+.button:hover {
+    -fx-background-color: #084B8A;
+}
+
+.tab-pane {
+    -fx-tab-min-height: 30px;
+    -fx-tab-max-height: 30px;
+    -fx-tab-min-width: 100px;
+    -fx-tab-max-width: 100px;
+
+    -fx-background-color: transparent;
+    -fx-border-width: 1 0 0 0;
+    -fx-border-color: #222;
+}
+
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-background-color: transparent;
+}
+
+.tab .tab-label {
+    -fx-text-fill: black;
+    -fx-background-color: transparent;
+    -fx-alignment: center;
+}
+
+.tab {
+    -fx-background-color: #e8e8e8;
+    -fx-fill: black;
+    -fx-background-insets: 0 2 0 0, 0 5 0 0, 1 6 0 0;
+}
+
+.tab:selected .tab-label {
+    -fx-text-fill: Black;
+    -fx-background-insets: 0;
+}
+
+.tab:selected {
+    -fx-border-width: 0 0 2 0;
+    -fx-border-color: #1DA1F2;
+}
+
+.tab-pane > .tab-header-area > .headers-region > .tab:selected .focus-indicator {
+    -fx-border-color: transparent;
+}
+
+.scroll-bar {
+    -fx-background-color: transparent;
+}
+
+.thumb {
+    -fx-background-color: #b3b3b3;
+    -fx-border-insets: 10;
+}
+
+.thumb:horizontal {
+    -fx-background-color: transparent;
+}
+
+#info {
+    -fx-text-fill: black;
+    -fx-fill: black;
+}
+
+#backButton {
+    -fx-background-color: rgb(250, 250, 250, 0.2);
+}
+
+#backButton:hover {
+    -fx-background-color: rgb(250, 250, 250, 0.1);
+}
