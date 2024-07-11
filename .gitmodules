@@ -1,0 +1,6 @@
+[submodule "PolyLinked_Client"]
+	path = PolyLinked_Client
+	url = https://github.com/Javad-Ak/PolyLinked_Client.git
+[submodule "PolyLinked_Server"]
+	path = PolyLinked_Server
+	url = https://github.com/Javad-Ak/PolyLinked_Server.git
