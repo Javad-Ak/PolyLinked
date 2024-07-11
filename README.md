@@ -97,7 +97,7 @@ api/resources
 
 PolyLinked is licensed under the MIT License. You are free to modify and distribute the project according to the terms of the license.
 
-## Contributing
+## Contribution
 
 Contributions to PolyLinked are welcome! If you want to contribute, please follow these steps:
 
