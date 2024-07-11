@@ -1,4 +1,4 @@
-# LinkedIn-clone Application with Java and JavaFX
+# PolyLinked: LinkedIn-Clone application with JavaFX
 
 ## Description
 
