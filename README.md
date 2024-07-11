@@ -3,7 +3,7 @@
 ## Description
 
 PolyLinked is a LinkedIn-clone application built using Java and JavaFX. The client-side application follows MVC (Model-View-Controller) architecture and The server-side programm handles incoming requests, which follows DAO (Data Access Object) design pattern.
-This was the project of advanced programming course at AmirKabir University (@AUT-CE).
+<br/>This was the project of advanced programming course at AmirKabir University (@AUT-CE).
 
 ## Table of Contents
 
@@ -79,10 +79,10 @@ api/resources
 
 ## Screenshots
 
-| <img width="1512" alt="login" src="https://github.com/Javad-Ak/PolyLinked/blob/main/document/screenshots/login.png"> | <img width="1512" alt="signup" src="https://github.com/Javad-Ak/PolyLinked/blob/main/document/screenshots/signup.png"> |
-| <img width="1512" alt="home" src="https://github.com/Javad-Ak/PolyLinked/blob/main/document/screenshots/home.png"> | <img width="1512" alt="profile" src="https://github.com/Javad-Ak/PolyLinked/blob/main/document/screenshots/profile.png"> |
+<img width="1500" alt="login" src="https://github.com/Javad-Ak/PolyLinked/blob/main/document/screenshots/login.png"> <img width="1500" alt="signup" src="https://github.com/Javad-Ak/PolyLinked/blob/main/document/screenshots/signup.png">
+<img width="1500" alt="home" src="https://github.com/Javad-Ak/PolyLinked/blob/main/document/screenshots/home.png"> <img width="1500" alt="profile" src="https://github.com/Javad-Ak/PolyLinked/blob/main/document/screenshots/profile.png">
 
-## Technologies Used
+## Technologies
 
 - Java
 - JavaFX
@@ -105,3 +105,4 @@ Contributions to PolyLinked are welcome! If you want to contribute, please follo
 2. Create a new branch for your feature or bug fix.
 3. Make your changes and ensure that the codebase passes all tests.
 4. Submit a pull request describing your changes.
+Notice that in order to open the fxml files in scenebuilder, you need to download their dependencies jar files to scenebuilder.
